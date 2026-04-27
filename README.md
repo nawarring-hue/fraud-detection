@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🛡️ Détection de Fraudes Bancaires — Temps Réel
 
 Pipeline de détection de fraudes bancaires combinant règles métier et modèle ML (Random Forest).
@@ -78,3 +79,6 @@ streamlit run dashboard/app.py
 - **Features** : amount, latitude, longitude, currency, transaction_type, merchant_category
 - **Sortie** : probabilité de fraude (0–1)
 - **Seuil** : configurable dans `config/settings.py` (`FRAUD_SCORE_THRESHOLD = 0.7`)
+=======
+# fraud-detection
+>>>>>>> 0ddab5b88a73b60b5e835714c66367e5f5e9b10c
