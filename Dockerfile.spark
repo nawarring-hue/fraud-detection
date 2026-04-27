@@ -1,0 +1,19 @@
+FROM apache/spark-py:v3.4.0
+
+USER root
+
+RUN pip install --no-cache-dir \
+    redis \
+    joblib \
+    scikit-learn \
+    pandas \
+    numpy \
+    confluent-kafka
+
+WORKDIR /app
+COPY . .
+
+ENV PYTHONPATH=/app
+ENV PYTHONUNBUFFERED=1
+
+CMD ["python", "processor.py"]
